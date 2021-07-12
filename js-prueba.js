@@ -5,6 +5,8 @@ var anios=elecciones.diff(hoy, "years");
 var days=elecciones.diff(hoy, "days");
 var hours=elecciones.diff(hoy, "hours");
 
+$('#p'.text(anios));
+
 function escribir(){
     document.getElementById('anios').innerHTML=anios 
 }escribir();
