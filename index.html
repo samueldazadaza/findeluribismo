@@ -9,17 +9,61 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-300">
-    <p class="bg-gray-100 flex">
-        <span class="bg-blue-500 text-gray-200 p-3 m-3" id="years">xx</span>
-        <span class="bg-blue-500 text-gray-200 p-3 m-3" id="days">xx</span>
-        <span class="bg-blue-500 text-gray-200 p-3 m-3" id="hours">xx</span>
-        <span class="bg-blue-500 text-gray-200 p-3 m-3" id="minutes">xx</span>
-        <span class="bg-blue-500 text-gray-200 p-3 m-3 font-bold text-4xl" id="seconds">xx</span>
-    </p>
-    <p class="mx-auto py-4">El Uribismo tiene sus dias contados</p>
-    <p class="mx-auto mb-4">Para terminar con esta efermedad mortal nos faltan:</p>
-    <img src="https://i.pinimg.com/564x/3a/97/fe/3a97fea447c20ca56d828209d22f4da3.jpg" alt="">
+<!-- This is an example component -->
+<div class="h-screen font-sans login bg-cover">
+    <div class="container mx-auto h-full flex flex-1 justify-center items-center">
+        <div class="w-full max-w-lg">
+          <div class="leading-loose">
+            <div class="max-w-sm m-4 p-3 bg-white bg-opacity-40 rounded shadow-xl">
+                <p class="mx-auto py-4 text-center font-bold bg-red-700 text-gray-200">El Uribismo tiene sus dias contados</p>
+                <p class="text-red-600 font-medium text-center text-lg font-bold">Para terminar de acabar con el centro demoniaco nos faltan:</p>
+                  <div class="mt-4" id="cajita">
 
+                    <div class="grid grid-cols-2">
+                      <div class="flex flex-col bg-white text-gray-800 p-3 m-3 mx-auto content-center rounded-3xl shadow-2xl">
+                          <p class="px-5">Segundos:</p>
+                          <p class="text-4xl font-bold" id="seconds">ssss</p>
+                      </div>
+                        <div class="flex flex-col bg-white text-gray-800 p-3 m-3 mx-auto content-center rounded-3xl shadow-2xl">
+                            <p class="px-5">Minutos:</p>
+                            <p class="text-4xl font-bold" id="minutes">min</p>
+                        </div>
+                        <div class="flex flex-col bg-white text-gray-800 p-3 m-3 mx-auto content-center rounded-3xl shadow-2xl">
+                            <p class="px-5">Horas:</p>
+                              <p class="text-4xl font-bold" id="hours">hh</p>
+                          </div>
+                        <div class="flex flex-col bg-white text-gray-800 p-3 m-3 mx-auto content-center rounded-3xl shadow-2xl">
+                            <p class="px-5">Dias:</p>
+                            <p class="text-4xl font-bold" id="days">dd</p>
+                          </div>
+                        <div class="flex flex-col bg-white text-gray-800 p-3 m-3 mx-auto content-center rounded-3xl shadow-2xl">
+                            <p class="px-5">Meses:</p>
+                            <p class="text-4xl font-bold" id="months">month</p>
+                       </div>
+                        <div class="flex flex-col bg-white text-gray-800 p-3 m-3 mx-auto content-center rounded-3xl shadow-2xl">
+                          <p class="px-5">Años:</p>
+                          <p class="text-4xl font-bold" id="years">yy</p>
+                        </div>
+
+                    </div>
+
+                  </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .login{
+      /*
+        background: url('https://tailwindadmin.netlify.app/dist/images/login-new.jpeg');
+      */
+      background: url('https://atlinnovacion.com/wp-content/uploads/2020/05/Cultura-8.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    </style>
         <script src="./index.js"></script>
 </body>
 </html>

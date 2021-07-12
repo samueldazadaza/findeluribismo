@@ -1,35 +1,24 @@
-// var years=elecciones.diff(hoy, "years");
-// var days=elecciones.diff(hoy, "days");
-// var hours=elecciones.diff(hoy, "hours");
-// var minutes=elecciones.diff(hoy, "minutes");
+const elecciones = moment('2022-05-29'); //variable fija de fecha elecciones 2022
 
-// function writeyears(){
-//     document.getElementById('years').innerHTML=years
-// }writeyears();
+function insert_html(){
+    var hoy=moment(); //variable fecha y hora, ahora mismo
 
-// function writedays(){
-//     document.getElementById('days').innerHTML=days
-// }writedays();
+    var years=elecciones.diff(hoy, "years");
+    document.getElementById('years').innerHTML=years //insertar datos en el HTML
 
-// function writehours(){
-//     document.getElementById('hours').innerHTML=hours
-// }writehours();
+    var months=elecciones.diff(hoy, "months"); 
+    document.getElementById('months').innerHTML=months //insertar datos en el HTML
 
-// function writeminutes(){
-//     document.getElementById('minutes').innerHTML=minutes
-// }writeminutes();
+    var days=elecciones.diff(hoy, "days");
+    document.getElementById('days').innerHTML=days //insertar datos en el HTML
 
-function writeseconds(){
-    var elecciones = moment('2022-05-29'); //variable fija de fecha elecciones 2022
-    var hoy=moment();
+    var hours=elecciones.diff(hoy, "hours");
+    document.getElementById('hours').innerHTML=hours //insertar datos en el HTML
+
+    var minutes=elecciones.diff(hoy, "minutes");
+    document.getElementById('minutes').innerHTML=minutes //insertar datos en el HTML
+
     var seconds=elecciones.diff(hoy, "seconds");
-    document.getElementById('seconds').innerHTML=seconds
+    document.getElementById('seconds').innerHTML=seconds //insertar datos en el HTML
 }
-setInterval(writeseconds, 2000); //tiempo para actualizar la informacion en milisegundos
-
-// function calcular() {
-//     var seconds = moment().format('MMMM Do YYYY, h:mm:ss a');
-//     console.log(seconds);
-//     return seconds;
-//     document.getElementById('seconds').innerHTML=seconds;
-// }
+setInterval(insert_html, 1000); //tiempo para actualizar la informacion en milisegundos
